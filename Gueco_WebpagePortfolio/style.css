@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+color: #333;
+margin: 0;
+padding: 0;
+}
+
+header {
+    background-color: #000000;
+color: rgb(236, 233, 233);
+padding: 2rem;
+text-align: center;
+}
+
+section {
+padding: 2rem;
+max-width: 1000px;
+margin: auto;
+}
+
+h2 {
+color: s#f5ecec;
+border-bottom: 2px solid #ccc;
+padding-bottom: 0.5rem;
+}
+
+.project, .skill {
+background-color: white;
+margin: 1rem 0;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+margin-top: 0;
+}
+
+.about-image {
+text-align: center;
+margin-top: 1.5rem;
+}
+
+.about-image img {
+max-width: 250px;
+border-radius: 50%;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer {
+text-align: center;
+background-color: #ddd;
+}
+
+/* Hide the extra paragraph unless checkbox is checked */
+#toggle-about:not(:checked) ~ .more-about {
+    display: none;
+  }
+  
+  #toggle-about:checked ~ .more-about {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  /* Button styles */
+  .toggle-label {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  /* Show "See More" text by default */
+  .toggle-label::before {
+    content: "See More";
+  }
+  
+  /* Change to "See Less" when checkbox is checked */
+  #toggle-about:checked + .toggle-label::before {
+    content: "See Less";
+  }
+  
+  <style>
+  .project-images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .project-images img {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+
+  .project-images img:hover {
+    transform: scale(1.05);
+  }
+</style>
